@@ -1,0 +1,59 @@
+/* list social networks */
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__list {
+  display: flex;
+  justify-content: space-around;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.icon {
+  height: 20px;
+  width: 20px;
+}
+.icon_background {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    width: 44px;
+    height: 44px;
+    background-color: #2196f3;
+    border-radius: 50%;
+    fill: white;
+  }
+}
+.icon_background-gray {
+  fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// footer social list
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social_name {
+  color: white;
+  font-family: Roboto, sans-serif;
+  @include text(700, 14px, 0.88);
+
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.icon_background-white {
+  fill: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.icon_white {
+  fill: white;
+}

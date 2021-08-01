@@ -1,0 +1,48 @@
+/* regular clients */
+.clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients_list {
+  display: flex;
+
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border-top: 1px solid rgba(175, 177, 184, 1);
+  border-right: 1px solid rgba(175, 177, 184, 1);
+  border-bottom: 1px solid rgba(175, 177, 184, 1);
+  border-left: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-log_fill {
+  width: 170px;
+  height: 60px;
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-log {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    border-top: 1px solid #2196f3;
+    border-right: 1px solid #2196f3;
+    border-bottom: 1px solid #2196f3;
+    border-left: 1px solid #2196f3;
+    border-radius: 4px;
+    fill: #2196f3;
+  }
+  &:hover .clients-log_fill,
+  &:focus .clients-log_fill {
+    fill: #2196f3;
+  }
+}

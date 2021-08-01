@@ -1,0 +1,16 @@
+/* log */
+.log {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  @include text(700, 26px, 1.19);
+
+  margin-right: 93px;
+}
+
+.log__studio_black {
+  color: #000000;
+}
+// footer log
+.log__studio_white {
+  color: #ffffff;
+}

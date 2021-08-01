@@ -1,0 +1,39 @@
+.team {
+  background-color: #f5f4fa;
+}
+.team__name {
+  color: var(--title-color);
+  font-family: Roboto, sans-serif;
+  @include text(500, 16px, 1.19);
+
+  text-align: center;
+}
+.team__profession {
+  font-family: Roboto, sans-serif;
+  @include text(400, 16px, 1.19);
+
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+.team__list {
+  display: flex;
+  align-items: center;
+
+  margin-right: -30px;
+  flex-wrap: wrap;
+}
+
+.team__element {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  &:not(:last-child) {
+    margin-right: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+.team__thumb {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+}

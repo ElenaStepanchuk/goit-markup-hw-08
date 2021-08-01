@@ -1,0 +1,37 @@
+/* adout us */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about__list {
+  flex-basis: calc((100% - 90px) / 4);
+  &:not(:first-child) {
+    margin-left: var(--about-us-card-gap);
+  }
+}
+.about__title {
+  color: var(--title-color);
+  font-family: Roboto, sans-serif;
+  @include text(700, 14px, 1.14);
+
+  text-transform: uppercase;
+}
+.about__description {
+  font-family: Roboto, sans-serif;
+  @include text(400, 14px, 1.71);
+
+  margin-top: 10px;
+}
+.about-us__thumb {
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+.about-img {
+  height: 70px;
+  width: 70px;
+}
+.about-img__icon {
+  height: 70px;
+  width: 70px;
+}
