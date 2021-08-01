@@ -1,12 +1,12 @@
 /* adout us */
 .about {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 .about__list {
-  flex-basis: calc((100% - 90px) / 4);
-  &:not(:first-child) {
-    margin-left: var(--about-us-card-gap);
+  // flex-basis: calc((100% - 90px) / 4);
+  // &:not(:first-child) {
+  //   margin-left: var(--about-us-card-gap);
   }
 }
 .about__title {
@@ -23,7 +23,7 @@
   margin-top: 10px;
 }
 .about-us__thumb {
-  padding: 25px 100px;
+  // padding: 25px 100px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
 }
