@@ -13,10 +13,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .title {
   font-family: Roboto, sans-serif;
   @include text(700, 36px, 1.17);

@@ -22,8 +22,8 @@
 .hero__name {
   color: white;
   font-family: Roboto, sans-serif;
-  @include text(900, 44px, 1.36);
-
+  // @include text(900, 44px, 1.36);
+  @include text(900, 26px, 1.62);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
