@@ -24,3 +24,9 @@
   background: rgba(47, 48, 58, 0.8);
   color: white;
 }
+.occupation_none {
+  display: none;
+  @media screen and(min-width:1200px) {
+    display: block;
+  }
+}

@@ -1,12 +1,26 @@
 /* adout us */
 .about {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and(min-width:768px) {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  @media screen and(min-width:1200px) {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .about__list {
-  flex-basis: calc((100% - 90px) / 4);
-  &:not(:first-child) {
+  margin-bottom: -30px;
+
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 60px) / 2);
     margin-left: var(--about-us-card-gap);
+  }
+  @media screen and(min-width:1200px) {
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 .about__title {
@@ -15,17 +29,23 @@
   @include text(700, 14px, 1.14);
 
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and(min-width:768px) {
+    text-align: left;
+  }
 }
 .about__description {
   font-family: Roboto, sans-serif;
   @include text(400, 14px, 1.71);
-
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 .about-us__thumb {
   padding: 25px 100px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  text-align: center;
 }
 .about-img {
   height: 70px;
