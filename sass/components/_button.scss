@@ -30,6 +30,27 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+// mobil menu button
+.header__mobil-menu {
+  background-color: unset;
+  border: none;
+  margin-top: 22px;
+  margin-right: 8px;
+}
+.icon-burger-icon {
+}
+.mob-icon-close {
+}
+.mob-button-close {
+  position: absolute;
+
+  border: none;
+  background-color: unset;
+
+  right: 26px;
+  top: -25px;
+}
+
 // foter form button
 .button__footer {
   position: absolute;

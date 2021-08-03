@@ -15,10 +15,10 @@
     <body>
         <!-- header -->
          <header class="header">
-        <!--<div class="container header-container">
+        <div class="container header-container">
             <nav class="nav">
                 <a class="log link" lang="en" href="./">Web<span class="log__studio_black">Studio</span></a>
-                <ul class="nav__list">
+                <!-- <ul class="nav__list">
                     <li class="list nav__item">
                         <a class="link nav__link nav__link_active" href="./index.html">Студия</a>
                     </li>
@@ -30,9 +30,9 @@
                     <li class="list nav__item">
                         <a class="link nav__link nav__link_border" href="">Контакты</a>
                     </li>
-                </ul>
+                </ul> -->
                 </nav>
-            <ul class="header-adress">
+            <!-- <ul class="header-adress">
                 <li class="list header-adress__list">
                     <a class="link header-adress__link" lang="en" href="mailto:info@devstudio.com">
                         <svg class="header-adress__mail">
@@ -50,8 +50,68 @@
                         </svg>
                         +38 096 111 11 11</a>
                     </li>
-            </ul>
-            </div> -->
+            </ul> -->
+            <!-- mobil menu -->
+            <button type="button" class="header__mobil-menu" data-menu-open>
+                <svg class="icon-burger-icon" width="24px" height="16px">
+                    <use href="./images/svg/symbol-defs.svg#icon-burger-icon">
+                    </use>
+                </svg>
+            </button>
+            </div>
+<div class="mob-menu is-hidden" mob-menu>
+    <div class="container">
+        <button type="button" class="mob-button-close" data-menu-close>
+            <svg class="mob-icon-close" width="19px" height="19px">
+                <use href="./images/svg/symbol-defs.svg#icon-close-black">
+                </use>
+            </svg>
+        </button>
+<ul class="mob-menu-list list">
+    <li class="mob-menu-list__item">
+        <a href="" class="mob-menu-list__link link">Студия</a>
+    </li>
+
+    <li class="mob-menu-list__item">
+        <a href="" class="mob-menu-list__link link">Портфолио</a>
+    </li>
+
+    <li class="mob-menu-list__item">
+        <a href="" class="mob-menu-list__link link">Контакты</a>
+    </li>
+</ul>
+
+<div class="menu-bottom">
+<ul class="mob-menu-contacts list">
+    <li class="mob-menu-contacts__item">
+        <a href="" class="mob-menu-contacts__link_tel link">+38 096 111 11 11</a>
+    </li>
+
+    <li class="mob-menu-contacts__item">
+        <a href="" class="mob-menu-contacts__link_mail link">info@devstudio.com</a>
+    </li>
+</ul>
+
+<ul class="mob-menu-social list">
+    <li class="mob-menu-social__item">
+        <a href="" class="mob-menu-social__link link">Instagram</a>
+    </li>
+
+    <li class="mob-menu-social__item">
+        <a href="" class="mob-menu-social__link link">Twitter</a>
+    </li>
+
+    <li class="mob-menu-social__item">
+        <a href="" class="mob-menu-social__link link">Facebook</a>
+    </li>
+
+    <li class="mob-menu-social__item">
+        <a href="" class="mob-menu-social__link link">LinkedIn</a>
+    </li>
+</ul>
+</div>
+</div>
+</div>
         </header>
         <main>
         <!-- hero -->
@@ -357,7 +417,7 @@
             </div>
         </section>
         <!-- regular clients -->
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="title">Постоянные клиенты</h2>
                 
@@ -419,7 +479,7 @@
                 </ul>
 
             </div>
-        </section> -->
+        </section>
     </main>
     <!-- footer -->
 <!-- <footer class="footer">
@@ -555,5 +615,6 @@
 </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

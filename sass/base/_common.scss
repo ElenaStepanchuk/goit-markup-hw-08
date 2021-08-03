@@ -23,10 +23,18 @@ img {
 }
 .title {
   font-family: Roboto, sans-serif;
-  @include text(700, 36px, 1.17);
+  @include text(700, 28px, 1.18);
   text-align: center;
   color: var(--title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  // @media screen and (min-width: 480px) {
+  //   margin-bottom: 30px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include text(700, 36px, 1.17);
+  }
 }
 /* Сброс отступов между элементами */
 h1,
