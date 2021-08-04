@@ -2,9 +2,14 @@
 .log {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
-  @include text(700, 26px, 1.19);
+  @include text(700, 24px, 1.17);
 
-  margin-right: 93px;
+  // margin-right: 84px;
+
+  @media screen and(min-width:1200px) {
+    // margin-right: 93px;
+    @include text(700, 26px, 1.19);
+  }
 }
 
 .log__studio_black {

@@ -3,7 +3,31 @@
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
+  text-align: center;
+  @media screen and(min-width:768px) {
+    text-align: left;
+  }
 }
-.footer_container {
-  display: flex;
+
+.footer__container {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  @media screen and(min-width:1200px) {
+    justify-content: left;
+  }
+}
+.footer-list {
+  @media screen and(min-width:768px) {
+    max-width: 232px;
+    margin-left: 61px;
+    text-align: center;
+  }
+  @media screen and(min-width:1200px) {
+    text-align: left;
+    margin-left: 0;
+  }
 }
