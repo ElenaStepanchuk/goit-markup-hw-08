@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    position: relative;
   }
   @media screen and(min-width:1200px) {
     justify-content: left;
@@ -22,11 +23,12 @@
 }
 .footer-list {
   @media screen and(min-width:768px) {
-    max-width: 232px;
+    width: 232px;
     margin-left: 61px;
     text-align: center;
   }
   @media screen and(min-width:1200px) {
+    width: 231px;
     text-align: left;
     margin-left: 0;
   }

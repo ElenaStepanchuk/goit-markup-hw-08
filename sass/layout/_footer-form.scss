@@ -6,7 +6,7 @@
   // display: flex;
   color: white;
   margin-left: auto;
-  position: relative;
+  // position: relative;
   margin-top: 60px;
   @media screen and(min-width:768px) {
     // display: flex;
@@ -14,6 +14,9 @@
     margin-left: 0;
   }
   @media screen and(min-width:1200px) {
+    justify-content: left;
+    margin-left: 93px;
+    margin-top: 0;
   }
 }
 .footer-form-name {
@@ -21,10 +24,16 @@
   width: 100%;
   justify-content: center;
   margin-bottom: 20px;
+  @include text(700, 14px, 1.17);
+  text-transform: uppercase;
+  @media screen and(min-width:1200px) {
+    justify-content: left;
+  }
 }
 // .footer-form-field {
 //   width: 450px;
 // }
+
 .footer-form-input {
   display: block;
   width: 450px;
@@ -38,6 +47,9 @@
   padding-left: 16px;
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and(min-width:1200px) {
+    width: 358px;
   }
 }
 .icon-icon-send {

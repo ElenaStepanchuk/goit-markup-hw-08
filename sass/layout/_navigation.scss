@@ -11,6 +11,12 @@
 @media screen and (min-width: 768px) {
   .nav__list {
     display: flex;
+    margin-left: 84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 93px;
   }
 }
 .nav__link {
