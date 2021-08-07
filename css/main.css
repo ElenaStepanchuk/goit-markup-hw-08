@@ -302,11 +302,18 @@ ol {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
   background-color: #ffffff;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .button-close {
@@ -349,10 +356,18 @@ ol {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: #212121;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-form-input {
@@ -422,12 +437,12 @@ ol {
 }
 
 .modal-form-chackbox:checked + .modal-form-checkbox-label::before {
-  background-image: url(../images/svg/symbol-defs.svg#icon-icon-check);
+  background-image: url(../images/svg/icon-check.svg);
   border: none;
 }
 
 .modal-form-chackbox:focus + .modal-form-checkbox-label::before {
-  background-image: url(../images/svg/symbol-defs.svg#icon-icon-check);
+  background-image: url(../images/svg/icon-check.svg);
   border: none;
 }
 
@@ -447,10 +462,18 @@ ol {
   justify-content: center;
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   margin-bottom: 30px;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .header {

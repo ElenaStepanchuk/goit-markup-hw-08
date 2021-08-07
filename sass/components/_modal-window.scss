@@ -3,13 +3,17 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 450px;
+  height: 609px;
 
-  width: 528px;
-  height: 581px;
   border-radius: 4px;
   background-color: #ffffff;
 
   padding: 40px;
+  @media screen and(min-width:1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .button-close {
   display: flex;
@@ -44,10 +48,14 @@
 }
 .modal-form-head {
   font-family: Roboto, sans-serif;
-  @include text(700, 20px, 1.15);
+  @include text(700, 20px, 1.5);
   color: rgba(33, 33, 33, 1);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+  // margin-bottom: 30px;
+  @media screen and(min-width:1200px) {
+    @include text(700, 20px, 1.15);
+  }
 }
 .modal-form-input {
   width: 100%;
@@ -106,11 +114,11 @@
   border-color: var(--accent-color);
 }
 .modal-form-chackbox:checked + .modal-form-checkbox-label::before {
-  background-image: url(../images/svg/symbol-defs.svg#icon-icon-check);
+  background-image: url(../images/svg/icon-check.svg);
   border: none;
 }
 .modal-form-chackbox:focus + .modal-form-checkbox-label::before {
-  background-image: url(../images/svg/symbol-defs.svg#icon-icon-check);
+  background-image: url(../images/svg/icon-check.svg);
   border: none;
 }
 .modal-form-checkbox-label::before {
@@ -127,8 +135,12 @@
   align-items: center;
   justify-content: center;
   font-family: Roboto, sans-serif;
-  @include text(400, 14px, 1.71);
+  @include text(400, 12px, 1.17);
 
   margin-bottom: 30px;
   margin-top: 10px;
+
+  @media screen and(min-width:1200px) {
+    @include text(400, 14px, 1.71);
+  }
 }
