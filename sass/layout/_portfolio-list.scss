@@ -1,14 +1,29 @@
 /* photo filter */
 .portfolio-list {
   display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+  margin-bottom: -15px;
+  @media screen and(min-width:768px) {
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and(min-width:1200px) {
+    padding-bottom: 50px;
+  }
 }
-.portfolio-item:not(:first-child) {
-  margin-left: 8px;
+.portfolio-item {
+  margin-bottom: 15px;
+
+  &:not(:first-child) {
+    margin-left: 8px;
+  }
 }
-.portfolio-title {
-  display: none;
+.portfolio-item_margin {
+  margin-left: 0px;
+  @media screen and(min-width:768px) {
+    margin-left: 8px;
+  }
 }
 .filter-batton {
   font-family: Roboto, sans-serif;

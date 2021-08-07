@@ -106,11 +106,11 @@
   border-color: var(--accent-color);
 }
 .modal-form-chackbox:checked + .modal-form-checkbox-label::before {
-  background-image: url(../images/svg/icon-check.svg);
+  background-image: url(../images/svg/symbol-defs.svg#icon-icon-check);
   border: none;
 }
 .modal-form-chackbox:focus + .modal-form-checkbox-label::before {
-  background-image: url(../images/svg/icon-check.svg);
+  background-image: url(../images/svg/symbol-defs.svg#icon-icon-check);
   border: none;
 }
 .modal-form-checkbox-label::before {

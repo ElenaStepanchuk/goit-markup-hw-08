@@ -33,18 +33,25 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .photo-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-right: -30px;
   margin-top: -30px;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .photo-list .list {
-  margin-top: 34px;
+  // margin-top: 34px;
+  margin-top: 30px;
   margin-right: 30px;
-  flex-basis: calc((100% - 90px) / 3);
-
-  &:nth-child(3n) {
-    margin-right: 0;
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and(min-width:1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
 .photo-list h2 {
