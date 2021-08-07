@@ -18,6 +18,9 @@
   &:not(:first-child) {
     margin-left: 8px;
   }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
 }
 .portfolio-item_margin {
   margin-left: 0px;
