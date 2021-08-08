@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-bottom: -30px;
   }
   @media screen and(min-width:1200px) {
     max-width: 1200px;
@@ -13,11 +14,14 @@
   }
 }
 .about__list {
-  margin-bottom: -30px;
-
+  // margin-bottom: -30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   @media screen and(min-width:768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: var(--about-us-card-gap);
+    margin-bottom: 30px;
   }
   @media screen and(min-width:1200px) {
     flex-basis: calc((100% - 120px) / 4);
@@ -39,7 +43,6 @@
   font-family: Roboto, sans-serif;
   @include text(400, 14px, 1.71);
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 .about-us__thumb {
   padding: 25px 100px;
